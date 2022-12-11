@@ -30,7 +30,6 @@
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="fromscratch.html">FromScratch</a></li>
                     </ul>
                 </div>
             </div>
@@ -160,7 +159,7 @@
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <img src="assets/stars.jpg" alt="5 stars" height="120" width="200">
+                            <img src="assets/stars.jpg" class="fivestars" alt="5 stars" height="120" width="200">
                         </span>
                         <h4 class="my-3">Guests - Ryan & Jin</h4>
                         <p class="text-muted"><span class="bolditalics">Ryan:</span><br>Cake was an amazing and very communicative host. The airbnb was clean and accommodating, and just a very short walk from the downtown area. Would definitely recommend staying here if you're visiting Provo! <br> <br><span class="bolditalics">Jin:</span><br>What a great place to stay in provo. Prime location and the space felt very spacious. Cake was also a great host with fast communication.</p>
@@ -176,14 +175,34 @@
             </div>
         </section>
 
-        <!-- Contact-->
-      
-        <section class="page-section" id="contact">
+        <!-- Contact Form  -->
+
+        <section class="page-section">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center" id="contact">
                     <h2 class="section-heading text-uppercase">Contact</h2>
-                    <h3 class="section-subheading text-white">Phone #: (435) 554 5362 <br><br> Email: b.kekoa.henline@gmail.com <br><br> We'll respond within 1 hour!</h3>
-                </div>
+                    <h4 class="section-subheading text-muted">Got a question? Fill out the form below and we will respond within an hour!</h4>
+                </div> <br><br> <br>
+                <div class="cformbg">
+                    <form action="mailto:b.kekoa.henline@gmail.com">
+                  
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  
+                      <label for="phone">Phone #</label> <br>
+                      <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                    </input> <br>
+                  
+                      <label for="question">Ask your question</label>
+                      <textarea id="question" name="question" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                  </div>
             </div>
         </section>
 
